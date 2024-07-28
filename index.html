@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div class="passwordGenerator">
+        <label for="headline" id="headline">Password Generator</label><br>
+        <input type="text" placeholder="Password" id="inputPassword"><i class="material-icons" id="copyToClipboard">content_copy</i><br>
+        
+        <div class="progress">
+            <div class="bar" id="progressBar">0%</div>
+        </div><br>
+        <input type="checkbox" class="checkbox" name="lowercase"> include lowercase(a-z) <br>
+        <input type="checkbox" class="checkbox" name="uppercase"> include uppercase(A-Z) <br>
+        <input type="checkbox" class="checkbox" name="numbers"> include numbers(0-9) <br>
+        <input type="checkbox" class="checkbox" name="symbols"> include symbol(@-*) <br>
+        <button id="generatePassword">Generate Password</button><br>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
